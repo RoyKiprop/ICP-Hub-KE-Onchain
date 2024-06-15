@@ -1,25 +1,11 @@
 {
     "canisters": {
-        "hello": {
-            "main": "src/hello/main.mo"
+      "erc20icp": {
+        "frontend": {
+          "entrypoint": "out/index.html"
         },
-        "hello_assets": {
-            "dependencies": ["hello"],
-            "source": ["out"],
-            "type": "assets"
-        }
-    },
-    "defaults": {
-        "build": {
-            "packtool": ""
-        }
-    },
-    "dfx": "0.8.0",
-    "networks": {
-        "local": {
-            "bind": "127.0.0.1:8000",
-            "type": "ephemeral"
-        }
-    },
-    "version": 1
+        "source": ["out"],
+        "type": "assets"
+      }
+    }
 }
