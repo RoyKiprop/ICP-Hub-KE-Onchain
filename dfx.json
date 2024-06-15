@@ -1,6 +1,6 @@
 {
     "canisters": {
-      "erc20icp": {
+      "icp_hub_kenya": {
         "frontend": {
           "entrypoint": "out/index.html"
         },

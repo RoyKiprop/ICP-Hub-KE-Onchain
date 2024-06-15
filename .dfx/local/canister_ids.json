@@ -4,5 +4,8 @@
   },
   "erc20icp": {
     "local": "bd3sg-teaaa-aaaaa-qaaba-cai"
+  },
+  "icp_hub_kenya": {
+    "local": "br5f7-7uaaa-aaaaa-qaaca-cai"
   }
 }
