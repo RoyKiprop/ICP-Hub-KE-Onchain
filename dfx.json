@@ -1,11 +1,9 @@
 {
     "canisters": {
-      "icp_hub_kenya": {
         "frontend": {
-          "entrypoint": "out/index.html"
-        },
-        "source": ["out"],
-        "type": "assets"
-      }
+          "entrypoint": "frontend/out/index.html", 
+          "source": ["frontend/out"],
+          "type": "assets"
+        }
     }
 }
