@@ -33,7 +33,7 @@ const Events = () => {
           <div className="w-full h-[410px] relative">
             <div>
               <Image
-                src={'/images/Memethon.png'}
+                src={'/images/WomenHackathon.avif'}
                 quality={100}
                 layout="fill"
                 objectFit="contain"
@@ -45,9 +45,9 @@ const Events = () => {
         <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="">
           <SectionSentence
             badge="Hackathon"
-            title={`Memethon Hackerhouse`}
-            paragraph={"We will be having our Memethon Hackerhouse happening from 17th - 19th May 2024. Register via the link below"}
-            link='https://lu.ma/memethon-hackerhouse'
+            title={`Women's Blockchain Hackathon`}
+            paragraph={"Our Women's Blockchain Hackathon is currently ongoing, check the registration link for details"}
+            link='https://lu.ma/0id6svz3'
             linkText='Check out event on luma'
           />
         </aside>
@@ -57,9 +57,9 @@ const Events = () => {
         <aside className="sm:w-10/12 md:w-8/12 lg:w-full text-center lg:text-left" data-aos="">
           <SectionSentence
             badge="Hackathon"
-            title={`CSH Safari Computer Club Hackathon`}
-            paragraph={"We will be having our CSH Safari Computer Club Hackathon happening from 4th - 9th May 2023"}
-            link='https://lu.ma/tqrfywhr'
+            title={`UNODC x ICP x DFINITY South Africa Hackathon`}
+            paragraph={"We are participating in the UNODC South Africa Hackathon, check the registration link for details"}
+            link='https://lu.ma/o3r4d4a4'
             linkText='Check out event on luma'
           />
         </aside>
@@ -67,7 +67,7 @@ const Events = () => {
           <div className="w-full h-[410px] relative">
             <div>
               <Image
-                src={'/images/CSHHackathon.avif'}
+                src={'/images/UNODC.avif'}
                 quality={100}
                 layout="fill"
                 objectFit="contain"

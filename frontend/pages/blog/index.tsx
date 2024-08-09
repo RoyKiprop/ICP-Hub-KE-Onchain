@@ -26,7 +26,7 @@ const Blog = () => {
         </div>
         <div className="">
           <Link
-            href="https://medium.com/dfinity"
+            href="https://icphub-ke.medium.com/"
             target="_blank"
             rel="noopener noreferrer"
           >

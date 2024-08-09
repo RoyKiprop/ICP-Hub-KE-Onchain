@@ -45,6 +45,20 @@ const partnerNames = [
   "Busha",
   "Bitcoin Events",
   "Bioniq",
+  "Sister Speaks", 
+  "Africa Women in Technology", 
+  "She Code Africa", 
+  "Tech Sisters Kenya", 
+  "Women Techmakers Nairobi", 
+  "Ledger Lady", 
+  "Appic", 
+  "Bit Markets",  
+  "The Tech room Podcast", 
+  "JKUAT Women In Technology", 
+  "Power Learn Project", 
+  "ICPex", 
+  "Kotani Pay", 
+  "Rent Space"
 ];
 
 const Partners = () => {
