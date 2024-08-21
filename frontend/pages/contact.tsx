@@ -50,7 +50,7 @@ const Contact = () => {
               />
               <IconListItem
                 label="Email"
-                value="info@kushitehub.com"
+                value="info@icpkushite.com"
                 icon={<FiMail />}
               />
             </div>
