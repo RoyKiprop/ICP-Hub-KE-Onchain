@@ -103,13 +103,13 @@ const NavBar = () => {
                 <div
                   className={`${isOpen ? "" : "hidden "} lg:block mt-5 lg:mt-0`}
                 >
-                  <ButtonLink
-                    value="Contact"
-                    style="solid"
-                    color="#F0BC39"
-                    size="small"
-                    href="/contact"
-                  />
+                <ButtonLink
+                  value="Join Us"
+                  style="solid"
+                  color="#e09f41"
+                  size="small"
+                  href="/contact"
+                />
                 </div>
               </div>
             </div>

@@ -6,7 +6,7 @@ interface ButtonProps {
   onClick?: MouseEventHandler<HTMLButtonElement>;
   size?: "normal" | "small";
   style?: "light" | "outline" | "solid";
-  color?: "white" | "primary" | "#313131" | "#5E2222" | "#F0BC39" | "#5E2323";
+  color?: "white" | "primary" | "#313131" | "#5E2222" | "#F0BC39" | "#5E2323" | "#e09f41";
   radius?: "pill" | "rounded";
 }
 
@@ -79,6 +79,9 @@ const Button = forwardRef(
               return "bg-[#F0BC39] text-#5E2323 hover:brightness -90";
             case "#5E2323":
               return "bg-[#5E2323] text-white hover:brightness-90";
+            case "#e09f41":
+              return "bg-[#e09f41] text-white hover:brightness-90";
+              
           }
       }
     };
