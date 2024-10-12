@@ -17,6 +17,7 @@ import CallOut from '../components/organisms/CallOut'
 import Footer from '../components/organisms/Footer'
 import Link from 'next/link'
 import TechJourneyStats from '../components/molecules/Card/JourneyStarts'
+import GrantApplicationCard from '../components/molecules/Card/GrantApplicationCard/GrantApplicationCard'
 
 const statsData = [
   { value: '20+', label: 'Hackathon' },
@@ -50,14 +51,24 @@ const Home = () => {
 
 
         {/* Feature List */}
-        <section className="grid grid-cols-1 gap-8 md:grid-cols-3 mb-16">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
   
-        <TechJourneyStats 
-          title="We provide easy medium to get started in your tech journey" 
-          stats={statsData} 
-        />
+          <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <TechJourneyStats 
+              title="We provide easy medium to get started in your tech journey" 
+              stats={statsData} 
+            />
+            <GrantApplicationCard /> 
+          </div>
+          
+          <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Add two more components here */}
+            {/* <SecondComponent /> */}
+            {/* <ThirdComponent /> */}
+          </div>
 
         </section>
+
 
         {/* Logo List */}
         {/* <LogoList /> */}
