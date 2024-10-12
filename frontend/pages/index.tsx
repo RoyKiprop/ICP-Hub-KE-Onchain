@@ -20,6 +20,7 @@ import TechJourneyStats from '../components/molecules/Card/JourneyStarts'
 import GrantApplicationCard from '../components/molecules/Card/GrantApplicationCard/GrantApplicationCard'
 import ICPEducationCard from '../components/molecules/Card/ICPEducationCard/ICPEducationCard'
 import InnovationIncubatorCard from '../components/molecules/Card/InnovatorCard/InnovatorCard'
+import VisionVideoCard from '../components/molecules/Card/VisionCard/VisionCard'
 
 const statsData = [
   { value: '20+', label: 'Hackathon' },
@@ -71,35 +72,8 @@ const Home = () => {
 
         </section>
 
-
-        {/* Logo List */}
-        {/* <LogoList /> */}
-        {/* How We Work */}
-        <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2">
-        <aside className="video-container" data-aos="">
-        <iframe
-          className="video-iframe"
-          src="https://www.youtube.com/embed/mqLoCgpDotI"
-          title="Video"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-        </aside>
-
-  <aside
-    className="text-center sm:w-10/12 lg:text-left lg:w-full"
-    data-aos=""
-  >
-    <SectionSentence
-      title="What is the
-      Vision of ICP blockchain?"
-      paragraph="ICP's vision is that most of the world's software will be replaced by smart contracts. To realize that vision, ICP is designed to make smart contracts as powerful as traditional software."
-      badge="WHAT WE DO"
-    />
-  </aside>
-</section>
-{/* <LogoList /> */}
+        {/* Vision Card */}
+          <VisionVideoCard />
 
         {/* Our Teams */}
         <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2 px-4 sm:px-8 md:px-12 lg:px-0">
