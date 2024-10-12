@@ -37,32 +37,28 @@ const Home = () => {
   return (
     <>
 
-    
+{/* <img src="/images/HeroImage.svg" alt="ICP Hub Kenya Group" className="w-full h-full object-cover" /> */}
         <PageTemplate title="Home - ICP HUB KE">
-        {/* Banner Section */}
-        <section className="hero-section" data-aos="">
-          
-        
-          <div className="w-10/12 md:w-8/12 text-center page-sentence">
-            <h1>
-              Ushering A New Era Of Decentralized Applications
-            </h1>
 
-            <p>
-              At the forefront of technology is ICP.Hub Kenya dedicated to advancing the Internet Computer ecosystem.
-            </p>
-            
-            <div className="button-container">
-              <Link href="/about" passHref>
-                <ButtonLink 
-                 value="Explore" 
-                 href="/about"  
-                />
-              </Link>
+        {/* Banner Section */}
+        <section className="relative overflow-hidden w-full h-[80vh] p-[60px_40px] mt-[30px] bg-gradient-to-r from-[#571E1E] to-[#340A0A] rounded-[60px] shadow-xl border-[6px] border-[#400d0b] hero-section">
+          <div className="flex justify-between items-center max-w-[1200px] mx-auto">
+            <div className="flex-1 text-white pr-10 text-base">
+              <h1 className="text-5xl font-bold mb-5">Revolutionizing Blockchain Education</h1>
+              <p className="text-lg mb-8">
+                At the forefront of technology is ICP.Hub Kenya dedicated to advancing the Internet Computer ecosystem.
+              </p>
+              <button className="bg-[#e0a040] text-white px-6 py-3 rounded-full font-bold cursor-pointer transition-colors duration-300 hover:bg-[#d09030]">
+                Explore Kenya ICP Hub
+              </button>
             </div>
-           
+            <div className="flex-1 relative">
+              <img src="/images/HeroImage.svg" alt="ICP Hub Kenya Group" className="w-full h-full object-cover rounded-[30px]" />
+            </div>
           </div>
-        </section> 
+        </section>
+
+
         {/* Feature List */}
         <div
           className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center mx-auto text-black" // Added text-black class for better visibility on mobile

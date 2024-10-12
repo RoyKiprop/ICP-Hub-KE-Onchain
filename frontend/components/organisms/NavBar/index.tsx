@@ -70,7 +70,7 @@ const NavBar = () => {
                 </div>
 
                 <div className={`${isOpen ? "" : "hidden"} lg:flex lg:items-center lg:space-x-8`}>
-                  <div className="flex flex-col lg:flex-row lg:space-x-8 space-y-5 lg:space-y-0 mt-4 lg:mt-0">
+                  <div className="flex flex-col lg:flex-row lg:space-x-8 space-y-5 lg:space-y-0 mt-8 lg:mt-0">
                     <NavLink href="/education" value="Education" canActive={true} />
                     <NavLink href="/events" value="Events" canActive={true} />
                     <NavLink href="/blog" value="Blog" canActive={true} />
