@@ -13,7 +13,7 @@ const NavLink = ({ href, value, canActive = false }: Props) => {
   return (
       <Link href={href} passHref>
         <p
-          className={`text-base text-white select-none hover:text-white ${
+          className={`text-base text-black select-none hover:text-white ${
             router.pathname == href && canActive
               ? 'font-semibold'
               : 'text-opacity-80'

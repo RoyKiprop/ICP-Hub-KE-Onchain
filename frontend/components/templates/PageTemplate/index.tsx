@@ -49,7 +49,6 @@ const PageTemplate = ({
           </div>
         </div>
       ) : (
-        // bg-[#632020]
         <>
         {/* bg-dark/[.80] backdrop-blur-[175px] */}
           <div

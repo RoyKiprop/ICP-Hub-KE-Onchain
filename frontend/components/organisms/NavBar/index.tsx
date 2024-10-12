@@ -91,7 +91,7 @@ const NavBar = () => {
                   </div>
                 </div>
                 
-                <div className="lg:flex lg:justify-end lg:items-end">
+                {/* <div className="lg:flex lg:justify-end lg:items-end"> */}
                   <div
                     className={`${
                       isOpen ? "" : "hidden "
@@ -113,7 +113,7 @@ const NavBar = () => {
                       href="/contact"
                     />
                   </div>
-                </div>
+                {/* </div> */}
 
               
               </div>

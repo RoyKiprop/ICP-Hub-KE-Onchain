@@ -80,7 +80,7 @@ const Button = forwardRef(
             case "#5E2323":
               return "bg-[#5E2323] text-white hover:brightness-90";
             case "#e09f41":
-              return "bg-[#e09f41] text-white hover:brightness-90";
+              return "bg-[#e09f41] text-black hover:brightness-90";
               
           }
       }
