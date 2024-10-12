@@ -49,11 +49,12 @@ const PageTemplate = ({
           </div>
         </div>
       ) : (
+        // bg-[#632020]
         <>
         {/* bg-dark/[.80] backdrop-blur-[175px] */}
           <div
             className={`w-full h-fit min-h-screen ${
-              light ? 'bg-[#FFEDED]' : 'bg-[#632020]'
+              light ? 'bg-[#FFEDED]' : 'bg-[#fff8f6]'
             } overflow-x-hidden`}
           >
             <div className="w-full h-full min-h-screen relative bg-cover">

@@ -77,6 +77,7 @@ const NavBar = () => {
               }`}
             >
               <div className="flex flex-col lg:flex-row w-full place-content-between lg:place-items-center">
+
                 <div className="w-full flex flex-row place-content-between place-items-center lg:w-fit">
                   <NavBrand />
                   <div className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -89,28 +90,32 @@ const NavBar = () => {
                     </div>
                   </div>
                 </div>
-                <div
-                  className={`${
-                    isOpen ? "" : "hidden "
-                  } space-y-5 mt-4 lg:mt-0 lg:space-y-0 lg:space-x-16 lg:flex lg:place-items-center`}
-                >
-                  <NavLink href="/education" value="Education" canActive={true} />
-                  <NavLink href="/events" value="Events" canActive={true} />
-                  <NavLink href="/blog" value="Blog" canActive={true} />
-                  <NavLink href="/about" value="About" canActive={true} />
-                  <NavLink href="/partners" value="Partners" canActive={true} />
+                
+                <div className="lg:flex lg:justify-end lg:items-end">
+                  <div
+                    className={`${
+                      isOpen ? "" : "hidden "
+                    } space-y-5 mt-4 lg:mt-0 lg:space-y-0 lg:space-x-16 lg:flex lg:place-items-center`}
+                  >
+                    <NavLink href="/education" value="Education" canActive={true} />
+                    <NavLink href="/events" value="Events" canActive={true} />
+                    <NavLink href="/blog" value="Blog" canActive={true} />
+                    <NavLink href="/about" value="About" canActive={true} />
+                    <NavLink href="/partners" value="Partners" canActive={true} />
+                  </div>
+                  
+                  <div className={`${isOpen ? "" : "hidden "} lg:block mt-5 ml-6 lg:mt-0`}>
+                    <ButtonLink
+                      value="Join Us"
+                      style="solid"
+                      color="#e09f41"
+                      size="small"
+                      href="/contact"
+                    />
+                  </div>
                 </div>
-                <div
-                  className={`${isOpen ? "" : "hidden "} lg:block mt-5 lg:mt-0`}
-                >
-                <ButtonLink
-                  value="Join Us"
-                  style="solid"
-                  color="#e09f41"
-                  size="small"
-                  href="/contact"
-                />
-                </div>
+
+              
               </div>
             </div>
           </Container>
