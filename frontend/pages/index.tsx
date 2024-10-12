@@ -19,6 +19,7 @@ import Link from 'next/link'
 import TechJourneyStats from '../components/molecules/Card/JourneyStarts'
 import GrantApplicationCard from '../components/molecules/Card/GrantApplicationCard/GrantApplicationCard'
 import ICPEducationCard from '../components/molecules/Card/ICPEducationCard/ICPEducationCard'
+import InnovationIncubatorCard from '../components/molecules/Card/InnovatorCard/InnovatorCard'
 
 const statsData = [
   { value: '20+', label: 'Hackathon' },
@@ -64,8 +65,8 @@ const Home = () => {
           </div>
           
           <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Add two more components here */}
             <ICPEducationCard /> 
+            <InnovationIncubatorCard /> 
           </div>
 
         </section>
