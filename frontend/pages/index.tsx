@@ -18,6 +18,7 @@ import Footer from '../components/organisms/Footer'
 import Link from 'next/link'
 import TechJourneyStats from '../components/molecules/Card/JourneyStarts'
 import GrantApplicationCard from '../components/molecules/Card/GrantApplicationCard/GrantApplicationCard'
+import ICPEducationCard from '../components/molecules/Card/ICPEducationCard/ICPEducationCard'
 
 const statsData = [
   { value: '20+', label: 'Hackathon' },
@@ -39,12 +40,13 @@ const Home = () => {
               <p className="text-lg mb-8">
                 At the forefront of technology is ICP.Hub Kenya dedicated to advancing the Internet Computer ecosystem.
               </p>
-              <button className="bg-[#e0a040] text-white px-6 py-3 rounded-full font-bold cursor-pointer transition-colors duration-300 hover:bg-[#d09030]">
+              <button className="bg-[#e0a040] text-black px-6 py-3 rounded font-bold cursor-pointer transition-colors duration-300 hover:bg-[#d09030]">
                 Explore Kenya ICP Hub
               </button>
             </div>
             <div className="flex-1 relative">
               <img src="/images/HeroImage.svg" alt="ICP Hub Kenya Group" className="w-full h-full object-cover rounded-[30px]" />
+              {/* <Image src={'/images/HeroImage.svg'} width={200} height={100} alt='Grant Application' loading='lazy' /> */}
             </div>
           </div>
         </section>
@@ -63,8 +65,7 @@ const Home = () => {
           
           <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Add two more components here */}
-            {/* <SecondComponent /> */}
-            {/* <ThirdComponent /> */}
+            <ICPEducationCard /> 
           </div>
 
         </section>
