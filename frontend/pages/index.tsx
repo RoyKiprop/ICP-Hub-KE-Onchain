@@ -1,21 +1,5 @@
-// import ButtonLink from 'components/atoms/Button/ButtonLink'
-// import LineDivider from 'components/atoms/LineDivider'
-// import FeatureCard from 'components/molecules/Card/FeatureCard'
-// import PageSentence from 'components/molecules/PageSentence'
-// import PricingCard from 'components/molecules/Card/PricingCard'
-// import ProjectCard from 'components/molecules/Card/ProjectCard'
-// import SectionSentence from 'components/molecules/SectionSentence'
-// import LogoList from 'components/organisms/LogoList'
-// import TestimonialList from 'components/organisms/TestimonialList'
-// import PageTemplate from 'components/templates/PageTemplate'
-
-// import Image from 'next/image'
-// import TeamCard from 'components/molecules/Card/TeamCard'
 import React from 'react'
-import { FiFigma, FiCode, FiBox } from 'react-icons/fi'
-// import CallOut from 'components/organisms/CallOut'
-// import Footer from 'components/organisms/Footer'
-// import Link from 'next/link'
+import { FiFigma, FiCode, FiBox, FiDollarSign, FiAirplay } from 'react-icons/fi'
 
 import ButtonLink from '../components/atoms/Button/ButtonLink'
 import LineDivider from '../components/atoms/LineDivider'
@@ -32,12 +16,18 @@ import TeamCard from '../components/molecules/Card/TeamCard'
 import CallOut from '../components/organisms/CallOut'
 import Footer from '../components/organisms/Footer'
 import Link from 'next/link'
+import TechJourneyStats from '../components/molecules/Card/JourneyStarts'
+
+const statsData = [
+  { value: '20+', label: 'Hackathon' },
+  { value: '1k+', label: 'Developers' },
+  { value: '10+', label: 'Startups' },
+];
 
 const Home = () => {
   return (
     <>
 
-{/* <img src="/images/HeroImage.svg" alt="ICP Hub Kenya Group" className="w-full h-full object-cover" /> */}
         <PageTemplate title="Home - ICP HUB KE">
 
         {/* Banner Section */}
@@ -60,67 +50,29 @@ const Home = () => {
 
 
         {/* Feature List */}
-        <div
-          className="sm:w-10/12 md:w-8/12 lg:w-6/12 2xl:w-5/12 text-center mx-auto text-black" // Added text-black class for better visibility on mobile
-          data-aos=""
-        >
-          <PageSentence
-            title="What We Offer"
-          />
-        </div>
-        
-        <section className="grid grid-cols-1 gap-5 md:grid-cols-3 mb-16">
+        <section className="grid grid-cols-1 gap-8 md:grid-cols-3 mb-16">
   
-          <div data-aos="">
-            <FeatureCard
-              title="Apply For Grants"
-              description="We believe in nurturing innovation and empowering visionaries. Our grant services are designed to provide the financial support and resources needed to turn your groundbreaking ideas into reality."
-              icon={<FiFigma />}
-            />
-          </div>
-          <div
-            data-aos=""
-            style={{
-              backgroundColor: "#FFEDED",
-              transition: "background-color 0.3s ease-in-out",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = "#FFE6E6";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = "#FFEDED";
-            }}
-          >
-            <FeatureCard
-              title="Education"
-              description="Our educational programs are designed to empower individuals and organizations with the skills and expertise needed to navigate the the blockchain and Internet Computer ecosystem."
-              icon={<FiCode style={{ color: "black" }} />}
-            />
-          </div>
+        <TechJourneyStats 
+          title="We provide easy medium to get started in your tech journey" 
+          stats={statsData} 
+        />
 
-          <div data-aos="">
-            <FeatureCard
-              title="Innovation Incubator"
-              description="Our Incubator Program is at the heart of our mission to inspire creativity and drive progress within the blockchain and Internet Computer community."
-              icon={<FiBox />}
-            />
-          </div>
-          
         </section>
+
         {/* Logo List */}
         {/* <LogoList /> */}
         {/* How We Work */}
         <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2">
         <aside className="video-container" data-aos="">
-  <iframe
-    className="video-iframe"
-    src="https://www.youtube.com/embed/mqLoCgpDotI"
-    title="Video"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
-  ></iframe>
-</aside>
+        <iframe
+          className="video-iframe"
+          src="https://www.youtube.com/embed/mqLoCgpDotI"
+          title="Video"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+        </aside>
 
   <aside
     className="text-center sm:w-10/12 lg:text-left lg:w-full"
