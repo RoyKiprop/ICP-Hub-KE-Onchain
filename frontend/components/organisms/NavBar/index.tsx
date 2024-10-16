@@ -67,7 +67,7 @@ const NavBar = () => {
           {/* Mobile menu icon */}
           <div className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
             <div className={`text-black text-2xl ${isMobile ? "cursor-default" : "cursor-pointer"}`}>
-              {isOpen ? <FiX /> : <FiMenu />}
+              <FiMenu />
             </div>
           </div>
         </div>
@@ -75,7 +75,14 @@ const NavBar = () => {
 
       {/* Mobile dropdown menu */}
       {isOpen && (
-        <div className="lg:hidden absolute top-16 left-0 right-0 bg-white p-4 shadow-lg">
+        <div className="lg:hidden fixed top-8 right-0 w-2/4 bg-white p-4 shadow-lg z-50">
+          {/* Close button */}
+          <div className="flex justify-end mb-4">
+            <div className="text-black text-2xl cursor-pointer" onClick={() => setIsOpen(false)}>
+              <FiX />
+            </div>
+          </div>
+          {/* Menu items */}
           <div className="flex flex-col space-y-5">
             <NavLink href="/about" value="About" canActive={true} />
             <NavLink href="/education" value="Education" canActive={true} />
