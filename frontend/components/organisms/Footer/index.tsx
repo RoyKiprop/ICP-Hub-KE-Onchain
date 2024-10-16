@@ -5,9 +5,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#632020] text-white py-16 px-16 flex flex-col ">
+    <footer className="bg-[#632020] text-white py-16 px-24 flex flex-col ">
       <div className="container flex flex-col space-y-5">
-        <div className="flex justify-between">
+        <div className="flex items-center justify-between">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left mb-12 lg:mb-0">
             <h2 className="text-4xl font-bold mb-4">Join The Revolution</h2>
             <p className="mb-4 max-w-sm">
@@ -22,7 +22,11 @@ const Footer = () => {
             </a>
           </div>
           <div className="mt-12 lg:mt-0">
-            <img src="" alt="Astronaut" className="w-64 h-auto" />
+            <img
+              src="/images/Astronaut.svg"
+              alt="Astronaut"
+              className="max-w-3xl h-auto"
+            />
           </div>
         </div>
 
