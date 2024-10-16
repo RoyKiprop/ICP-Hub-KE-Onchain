@@ -20,7 +20,7 @@ const FirstComponent = () => {
             height={200} 
             alt='Grant Application' 
             loading='lazy'
-            className="rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out"
+            className="rounded-lg hover:shadow-xl transition duration-300 ease-in-out"
           />
         </div>
       </div>

@@ -12,11 +12,13 @@ import StatisticList from '../../components/organisms/StatisticList';
 import PageTemplate from '../../components/templates/PageTemplate';
 import Footer from '../../components/organisms/Footer';
 import FirstComponent from './FirstComponent';
+import VisionMissionComponent from './VisionMissionSection';
 
 const About = () => {
   return (
     <PageTemplate title="About - ICP Hub Kenya">
         <FirstComponent /> 
+        <VisionMissionComponent /> 
     </PageTemplate>
   )
 }
