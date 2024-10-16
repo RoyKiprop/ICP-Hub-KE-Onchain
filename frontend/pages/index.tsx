@@ -62,7 +62,7 @@ const Home = () => {
         <VisionVideoCard />
 
         {/* Our Teams */}
-        <section className="bg-[#4b1c1c] border-8 py-12 px-4 sm:px-8 md:px-12 w-full">
+        <section className="bg-[#4b1c1c]  py-12 px-4 sm:px-8 md:px-12 w-full">
           <h2 className="text-white text-4xl font-bold text-center mb-12">
             Our Core Team
           </h2>
@@ -189,64 +189,6 @@ const Home = () => {
         </section>
 
         <LineDivider />
-      </PageTemplate>
-
-      {/* Section with light background */}
-      <PageTemplate title="Home - ICP HUB KE" light>
-        <section
-          data-light-section
-          className="flex flex-col gap-16 items-center mt-0"
-        >
-          <div
-            className="text-center sm:w-10/12 md:w-8/12 lg:w-6/12 mt-0 mb-2 sm:mb-0"
-            data-aos=""
-          >
-            <SectionSentence
-              lightTitle="ICP has unique features"
-              lightBadge="WHAT ICP OFFERS TODAY"
-            />
-          </div>
-          <div className="w-full grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-1 mt-2 sm:mt-0">
-            <div data-aos="">
-              <ProjectCard
-                lightTitle="Dev friendliness"
-                lightDescription="Developers can write  cansister smart contracts using popular languages like Rust, TypeScript, or Python and easily incorporate libraries from their respective ecosystem."
-                imageSource="/images/DevFriendly2.png"
-                imageAlt="ICP Developer languages"
-              />
-            </div>
-            <div data-aos="">
-              <ProjectCard
-                lightTitle="Interoperability"
-                lightDescription="ICP can interface with other smart contract blockchains and traditional (Web 2) internet resources via HTTP requests and signing capabilities. Chain-Key Cryptography has made this possible."
-                imageSource="/images/Interopability.png"
-                imageAlt="Interopability on ICP"
-              />
-            </div>
-          </div>
-          <div className="w-full grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-5 mt-0">
-            <div data-aos="">
-              <ProjectCard
-                lightTitle="Everything On-Chain"
-                lightDescription="ICP allows developers to host their applications fully on-chain (i.e frontend and smart contract), big thanks to the web-serving capability of canister smart contracts on ICP."
-                imageSource="/images/Onchain2.png"
-                imageAlt="Host everything on chain using ICP"
-              />
-            </div>
-            <div data-aos="">
-              <ProjectCard
-                lightTitle="Very very cheap!"
-                lightDescription="The cost of storing data on-chain with ICP is just $5 USD per GB per year. This is significantly lower as compared to other chains that currently exist."
-                imageSource="/images/VeryCheap.png"
-                imageAlt="ICP is very cheap as compared to other chains"
-              />
-            </div>
-          </div>
-        </section>
-
-        <div data-aos="">
-          <CallOut />
-        </div>
       </PageTemplate>
 
       <Footer />
