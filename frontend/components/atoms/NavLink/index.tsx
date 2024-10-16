@@ -1,27 +1,31 @@
-import Link, { LinkProps } from 'next/link'
+import Link from 'next/link'
 import React from 'react'
 import { useRouter } from 'next/router'
 import useMobileDeviceDetection from "../../../hooks/useMobileDetection";
+
 interface Props {
   href: string
   value: string
   canActive?: boolean
 }
+
 const NavLink = ({ href, value, canActive = false }: Props) => {
   const router = useRouter()
   const isMobile = useMobileDeviceDetection()
+  
   return (
-      <Link href={href} passHref>
-        <p
-          className={`text-base text-black select-none hover:text-grey ${
-            router.pathname == href && canActive
-              ? 'font-semibold'
-              : 'text-opacity-80'
-          } ${isMobile ? 'cursor-default' : 'cursor-pointer'}`}
-        >
-          {value}
-        </p>
-      </Link>
+    <Link href={href} passHref>
+      <p
+        className={`
+          font-inter font-extralight leading-[16px] text-black select-none hover:text-grey
+          ${router.pathname == href && canActive ? 'font-normal' : 'text-opacity-80 font-normal'}
+          ${isMobile ? 'cursor-default' : 'cursor-pointer'}
+        `}
+        style={{ fontFamily: 'Inter, sans-serif' }}
+      >
+        {value}
+      </p>
+    </Link>
   )
 }
 

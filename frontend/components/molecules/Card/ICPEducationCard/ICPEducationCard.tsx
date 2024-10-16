@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const ICPEducationCard = () => {
   return (
-    <div className="mx-auto bg-[#582727] rounded-2xl overflow-hidden shadow-lg text-white p-6">
+    <div className="mx-auto bg-[#582727] rounded-2xl overflow-hidden shadow-lg text-white p-6 flex items-center">
       <div className="flex justify-between items-center">
         <div className="flex-1 pr-6">
           <h2 className="text-4xl font-bold mb-4">ICP <br/>Education</h2>

@@ -4,7 +4,8 @@ interface Props {
 }
 const Container = ({children} : Props) => {
   return (
-    <div className={`px-7 xl:px-[150px] 3xl:px-[300px] 4xl:px-[400px]`}>{children}</div>
+    // <div className={`xl:px-[150px] 3xl:px-[300px] 4xl:px-[400px]`}>{children}</div>
+    <div>{children}</div>
   )
 }
 

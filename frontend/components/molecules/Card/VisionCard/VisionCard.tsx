@@ -2,11 +2,11 @@ import React from 'react';
 
 const VisionVideoCard = () => {
   return (
-    <div className="mx-auto rounded-2xl overflow-hidden p-8">
+    <div className="mx-auto max-w-6xl rounded-2xl overflow-hidden p-8">
       <h1 className="text-4xl font-bold mb-4 text-center">
         What is the Vision of ICP blockchain?
       </h1>
-      <p className="text-lg mb-6 text-center">
+      <p className="text-lg font-thin mb-6 text-center">
         ICP&apos;s vision is that most of the world&apos;s software will be replaced by smart contracts. To realize that
         vision, ICP is designed to make smart contracts as powerful as traditional software.
       </p>
