@@ -61,12 +61,13 @@ const NavBar = () => {
                 isScrolled || isOpen ? "" : "lg:px-0"
               }`}
             >
-              <div className="flex flex-col lg:flex-row w-full place-content-between lg:place-items-center">
+              <div className="flex flex-row items-center w-full justify-between lg:place-items-center">
                 <NavBrand />
-                
-                <div className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
+
+                {/* Hamburger menu icon for mobile */}
+                <div className="lg:hidden ml-auto" onClick={() => setIsOpen(!isOpen)}>
                   <div
-                    className={`text-white text-2xl ${
+                    className={`text-black text-2xl ${
                       isMobile ? "cursor-default" : "cursor-pointer"
                     }`}
                   >
@@ -74,8 +75,21 @@ const NavBar = () => {
                   </div>
                 </div>
 
-                <div className={`${isOpen ? "" : "hidden"} lg:flex lg:items-center lg:space-x-8`}>
-                  <div className="flex flex-col lg:flex-row lg:space-x-8 space-y-5 lg:space-y-0 mt-8 lg:mt-0">
+                {/* Mobile dropdown menu */}
+                <div
+                  className={`${
+                    isOpen ? "absolute top-12 right-4 bg-white p-4 shadow-lg rounded-lg" : "hidden"
+                  } lg:flex lg:items-center lg:space-x-8`}
+                >
+                  {/* Close button for mobile menu */}
+                  <div
+                    className="absolute top-2 right-2 text-black text-2xl cursor-pointer"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <FiX />
+                  </div>
+
+                  <div className="flex flex-col space-y-5">
                     <NavLink href="/education" value="Education" canActive={true} />
                     <NavLink href="/events" value="Events" canActive={true} />
                     <NavLink href="/blog" value="Blog" canActive={true} />
@@ -83,13 +97,16 @@ const NavBar = () => {
                     <NavLink href="/partners" value="Partners" canActive={true} />
                   </div>
 
-                  <div className="mt-5 lg:mt-0">
-                  <GradientButton onClick={handleTelegramRedirect}>
-                    <span className="px-4">Join Us</span>
-                  </GradientButton>
+                  <div className="mt-5">
+                    <GradientButton onClick={handleTelegramRedirect}>
+                      <span className="px-4">Join Us</span>
+                    </GradientButton>
                   </div>
                 </div>
               </div>
+
+
+
             </div>
           </Container>
         </nav>
