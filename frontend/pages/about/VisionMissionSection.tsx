@@ -6,7 +6,7 @@ const VisionMissionComponent = () => {
     <div className="bg-[#212121] text-white p-8">
       <div className="max-w-6xl mx-auto">
         {/* Group Photo */}
-        <div className="relative mb-8 rounded-lg overflow-hidden">
+        <div className="relative mb-12 rounded-lg overflow-hidden">
           <Image
             src="/images/Mission.svg"
             alt="Group photo of blockchain enthusiasts"
