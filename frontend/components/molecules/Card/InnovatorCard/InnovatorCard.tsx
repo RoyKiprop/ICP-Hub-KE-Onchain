@@ -11,7 +11,7 @@ const InnovationIncubatorCard: React.FC<InnovationIncubatorCardProps> = ({ isDar
   // const shadowColor = isDarkMode ? 'text-black' : 'shadow-gray-300';
 
   return (
-    <div className={`max-w-2xl mx-auto ${bgColor} ${textColor} rounded-2xl overflow-hidden p-6`}>
+    <div className={`max-w-2xl mx-auto ${bgColor} ${textColor} rounded-2xl overflow-hidden p-6 flex items-center`}>
       <div className="flex justify-between items-center">
         <div className="flex-1 pr-6 mt-6">
           <h2 className="text-4xl font-bold mb-4">Innovation Incubator</h2>
