@@ -21,6 +21,7 @@ import GrantApplicationCard from '../components/molecules/Card/GrantApplicationC
 import ICPEducationCard from '../components/molecules/Card/ICPEducationCard/ICPEducationCard'
 import InnovationIncubatorCard from '../components/molecules/Card/InnovatorCard/InnovatorCard'
 import VisionVideoCard from '../components/molecules/Card/VisionCard/VisionCard'
+import BlockchainEducationBanner from '../components/molecules/Card/BlockchainEducationBanner/BlockchainEducationBanner'
 
 const statsData = [
   { value: '20+', label: 'Hackathon' },
@@ -35,7 +36,7 @@ const Home = () => {
         <PageTemplate title="Home - ICP HUB KE">
 
         {/* Banner Section */}
-        <section className="relative overflow-hidden w-full h-[80vh] p-[60px_40px] mt-[30px] bg-gradient-to-r from-[#571E1E] to-[#340A0A] rounded-[60px] shadow-xl border-[6px] border-[#400d0b] hero-section">
+        {/* <section className="relative overflow-hidden w-full h-[80vh] p-[60px_40px] mt-[30px] bg-gradient-to-r from-[#571E1E] to-[#340A0A] rounded-[60px] shadow-xl border-[6px] border-[#400d0b] hero-section">
           <div className="flex justify-between items-center max-w-[1200px] mx-auto">
             <div className="flex-1 text-white pr-10 text-base">
               <h1 className="text-5xl font-bold mb-5">Revolutionizing Blockchain Education</h1>
@@ -48,10 +49,10 @@ const Home = () => {
             </div>
             <div className="flex-1 relative">
               <img src="/images/HeroImage.svg" alt="ICP Hub Kenya Group" className="w-full h-full object-cover rounded-[30px]" />
-              {/* <Image src={'/images/HeroImage.svg'} width={200} height={100} alt='Grant Application' loading='lazy' /> */}
             </div>
           </div>
-        </section>
+        </section> */}
+        <BlockchainEducationBanner /> 
 
 
         {/* Feature List */}
