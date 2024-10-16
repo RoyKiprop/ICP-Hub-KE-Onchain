@@ -29,28 +29,30 @@ const About = () => {
     <PageTemplate title="About - ICP Hub Kenya">
         <FirstComponent /> 
 
-        <div className="bg-[#212121] p-8"> {/* Dark background with padding */}
-        <VisionMissionComponent />
+        <div className="bg-[#212121] p-8">
+
+          <VisionMissionComponent />
+
           {/* Feature List */}
-          <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            
-          <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
-              <TechJourneyStats 
-                title="We provide easy medium to get started in your tech journey" 
-                stats={statsData} 
-                isDarkMode={true}
-              />
-              <GrantApplicationCard 
-                isDarkMode={true}
-              /> 
-            </div>
+          <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-6xl mx-auto">
             
             <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
-              <ICPEducationCard /> 
-              <InnovationIncubatorCard 
-                isDarkMode={true}
-              /> 
-            </div>
+                <TechJourneyStats 
+                  title="We provide easy medium to get started in your tech journey" 
+                  stats={statsData} 
+                  isDarkMode={true}
+                />
+                <GrantApplicationCard 
+                  isDarkMode={true}
+                /> 
+              </div>
+              
+              <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <ICPEducationCard /> 
+                <InnovationIncubatorCard 
+                  isDarkMode={true}
+                /> 
+              </div>
 
           </section>
         </div>

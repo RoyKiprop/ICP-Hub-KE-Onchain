@@ -21,8 +21,8 @@ const VisionMissionComponent = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="relative">
             <h2 className="text-5xl font-extrabold mb-4">Our Vision</h2>
-            <p className="text-md leading-relaxed">
-              We're dedicated to democratizing blockchain technology through
+            <p className="text-md font-thin leading-relaxed">
+              We&apos;re dedicated to democratizing blockchain technology through
               accessible education and empowering developers to create real
               decentralized applications on the Internet Computer platform.
               Through collaboration within the blockchain industry, we drive
@@ -31,7 +31,7 @@ const VisionMissionComponent = () => {
           </div>
           <div className="relative md:border-l md:border-gray-300 md:pl-8">
             <h2 className="text-5xl font-extrabold mb-4">Our Mission</h2>
-            <p className="text-md leading-relaxed">
+            <p className="text-md font-thin leading-relaxed">
               We envision a world where blockchain technology empowers
               individuals and organizations, enabling them to unlock their full
               potential. The Internet Computer is our chosen vessel for this
