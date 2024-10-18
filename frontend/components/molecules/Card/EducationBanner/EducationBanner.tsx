@@ -2,7 +2,7 @@ import React from "react";
 import GradientButton from "../../../atoms/GradientButton/GradientButton";
 import Image from "next/image";
 
-const EducationBanner: React.FC = () => {
+const EducationBanner = () => {
   return (
     <div className="mx-auto my-20 relative overflow-hidden h-auto md:h-[70vh] p-[40px_30px] bg-gradient-to-r from-[#571E1E] to-[#340A0A] rounded-[40px] shadow-xl border-[4px] border-[#400d0b] hero-section max-w-6xl flex flex-col space-y-4 items-center">
       <div className="flex flex-col items-start">
@@ -17,7 +17,9 @@ const EducationBanner: React.FC = () => {
 
         {/* Text Section */}
         <div className="flex items-center text-white justify-center space-x-4">
-          <h1 className="text-3xl md:text-5xl font-bold">Be ICP Certified!</h1>
+          <h1 className="text-3xl md:text-5xl font-bold tracking-tighter">
+            Be ICP Certified!
+          </h1>
 
           {/* Gold Coin Icon */}
           <div>

@@ -44,22 +44,30 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Follow Us</h4>
             <ul className="text-white/80">
               <li className="mb-4">
-                <NavLink value="Telegram" href="https://t.me/icphub_KE" />
+                <a className="text-white" href="https://t.me/icphub_KE">
+                  Telegram
+                </a>
               </li>
               <li className="mb-4">
-                <NavLink value="Twitter" href="https://twitter.com/icphub_KE" />
+                <a className="text-white" href="https://twitter.com/icphub_KE">
+                  Twitter
+                </a>
               </li>
               <li className="mb-4">
-                <NavLink
-                  value="Instagram"
+                <a
+                  className="text-white"
                   href="https://www.instagram.com/icphub_ke/"
-                />
+                >
+                  Instagram
+                </a>
               </li>
               <li className="mb-4">
-                <NavLink
-                  value="LinkedIn"
+                <a
+                  className="text-white"
                   href="https://www.linkedin.com/company/icphub-ke/"
-                />
+                >
+                  Linkedin
+                </a>
               </li>
             </ul>
           </div>
@@ -68,23 +76,29 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Education</h4>
             <ul className="">
               <li className="mb-4 text-white/80">
-                <NavLink
-                  value="Dacade course"
+                <a
+                  className="text-white"
                   href="https://dacade.org/communities/icp"
-                />
+                >
+                  Decade Courses
+                </a>
               </li>
               <li className="mb-4">
-                <NavLink
-                  value="About"
+                <a
+                  className="text-white"
                   href="https://dacade.org/communities/icp"
-                />
+                >
+                  About
+                </a>
               </li>
             </ul>
           </div>
           <div>
             <h4 className="text-lg  font-bold mb-4">Blog</h4>
             <ul className="space-y-2">
-              <NavLink value="Our blog posts" href="/blog" />
+              <a className="text-white" href="/blog">
+                Our blog posts
+              </a>
             </ul>
           </div>
         </div>
